@@ -4,128 +4,130 @@
     <meta charset="UTF-8">
     <title>CSS 배경속성</title>
     <style>
-    /* 
-        CSS배경속성
-    
-    
-     */
-    .box1{
-        width: 100%;
-        height: 200px;
-        border: 1px solid black;
-        margin-top: 10px;  
+        /* 
+            CSS 배경속성            
+        */
+        .box1 {
+            width: 100%;
+            height: 200px;
+            border: 1px solid black;
+            margin-top: 10px;
+        }
 
-    }
-    .box1-1{background-image: url('./img/bg_front.png');}
-    .box1-2{background-image: url('./img/bg_back.png');}
-    .box1-3{background-image: url('./img/balloon.jpg');}
+        .box1-1 {background-image: url('./img/bg_front.png');}
+        .box1-2 {background-image: url('./img/bg_back.png');}
+        .box1-3 {background-image: url('./img/balloon.jpg');}
 
-    .box2{
-        display: inline-block;
-        width: 100px;
-        height: 200px;
-        border: 1px solid black;
-        background-image: url('./img/bg_front.png');
-    }
-    .box2-1{background-size: 100px;}
-    .box2-2{background-size: 100px 100px;}
-    .box2-3{background-size: 100% 100%;}
+        .box2 {
+            display: inline-block;
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            background-image: url('./img/bg_front.png');
+        }
 
-    .box3{
-        display: inline-block;
-        width: 30%;
-        height: 200px;
-        border: 1px solid black;
-    }
+        .box2-1 {background-size: 100px;}
+        .box2-2 {background-size: 100px 100px;}
+        .box2-3 {background-size: 100% 100%;}
 
-    .box3-1{
-        background-image: url(./img/repeat-x.png);
-        background-repeat: repeat-x;
+        .box3 {
+            display: inline-block;
+            width: 30%;
+            height: 200px;
+            border: 1px solid black;
+        }
 
-    }
-    .box3-2{
-        background-image: url('./img/repeat-y.png');
-        background-repeat: repeat-y;
+        .box3-1 {
+            background-image: url('./img/repeat-x.png');
+            background-repeat: repeat-x;
+        }
 
-    }
-    .box3-3{
-        background-image: url('./img/poodle.jpg');
-        background-repeat: no-repeat;
+        .box3-2 {
+            background-image: url('./img/repeat-y.png');
+            background-repeat: repeat-y;
+        }
 
-    }
+        .box3-3 {
+            background-image: url('./img/poodle.jpg');
+            background-repeat: no-repeat;
+        }
 
-    .box4{
-        display: inline-block;
-        width: 360px;
-        height: 200px;
-        border: 1px solid black;
-        background-image: url('./img/balloon.jpg');
-        background-size: 60px;
-        background-repeat: no-repeat;
-    }
-    .box4-1{background-position: left;}
-    .box4-1{background-position: right;}
-    .box4-1{background-position: top;}
-    .box4-1{background-position: bottom;}
-    .box4-1{background-position: 100px;}
-    .box4-1{background-position: 50%;}
-    
-    .box5{
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        border: 1px solid black;
-    }
-    .box5-1{background-color: green;}
-    .box5-2{background-color: #00ff00;}
-    .box5-3{background-color: rgb(0, 255, 0);}
+        .box4 {
+            display: inline-block;
+            width: 360px;
+            height: 200px;
+            border: 1px solid black;
+            background-image: url('./img/balloon.jpg');
+            background-size: 60px;
+            background-repeat: no-repeat;
+        }
 
-    .box6{
-        display: inline-block;
-        width: 300px;
-        height: 200px;
-        border: 1px solid black;
-    }
-    .box6-1{background-color: yellow;
-    background-image: url('./img/poodle.jpg');
-    background-size: 100px;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    }
-    .box6-2{
-        background: yellow url('./img/poodle.jpg') center/100px no-repeat;
-    }
-    .box6-3{
-        background: url(./img/poodle.jpg) no-repeat;
-    }
+        .box4-1 {background-position: left;}
+        .box4-2 {background-position: right;}
+        .box4-3 {background-position: top;}
+        .box4-4 {background-position: bottom;}
+        .box4-5 {background-position: 100px;}
+        .box4-6 {background-position: 50% 10px;}
+        
+        .box5 {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .box5-1 {background-color: green;}
+        .box5-2 {background-color: #00ff00;}
+        .box5-3 {background-color: rgb(0, 255, 0);}
+
+        .box6 {
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .box6-1 {
+            background-color: yellow;
+            background-image: url('./img/poodle.jpg');
+            background-size: 100px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .box6-2 {
+            background: yellow url('./img/poodle.jpg') center/100px no-repeat;
+        }
+        .box6-3 {
+            background: url('./img/poodle.jpg') no-repeat;
+        }
+        
     </style>
-
-
 </head>
 <body>
-    <h3>3.CSS background 속성</h3>
-    
+    <h3>3.CSS Background 속성</h3>
+
     <h4>1) background-image 속성</h4>
     <section>
         <div class="box1 box1-1"></div>
         <div class="box1 box1-2"></div>
         <div class="box1 box1-3"></div>
     </section>
-    
-    <h4>2)background-sise 속성</h4>
+
+    <h4>2) background-size 속성</h4>
     <section>
         <div class="box2 box2-1"></div>
         <div class="box2 box2-2"></div>
         <div class="box2 box2-3"></div>
     </section>
-    <h4>3)background-repeat 속성</h4>
+
+    <h4>3) background-repeat 속성</h4>
     <section>
         <div class="box3 box3-1"></div>
         <div class="box3 box3-2"></div>
         <div class="box3 box3-3"></div>
     </section>
-    <h4>4)background-position 속성</h4>
+
+    <h4>4) background-position 속성</h4>
     <section>
         <div class="box4 box4-1"></div>
         <div class="box4 box4-2"></div>
@@ -134,19 +136,20 @@
         <div class="box4 box4-5"></div>
         <div class="box4 box4-6"></div>
     </section>
-    <h4>5)background-color 속성</h4>
+
+    <h4>5) background-color 속성</h4>
     <section>
         <div class="box5 box5-1"></div>
         <div class="box5 box5-2"></div>
         <div class="box5 box5-3"></div>
     </section>
-    <h4>6)background-통합속성</h4>
+
+    <h4>6) background 통합속성</h4>
     <section>
         <div class="box6 box6-1"></div>
         <div class="box6 box6-2"></div>
         <div class="box6 box6-3"></div>
     </section>
-    
     
 </body>
 </html>

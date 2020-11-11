@@ -2,110 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSS 박스 속성(크기, 여백, 테두리)</title>
-
+    <title>CSS 박스속성(크기, 여백, 테두리)</title>
     <style>
         /* 
-            1)width, height 속성
-            -block, inline-block 태그의 가로, 세로 크기를 지정
-            -px, %단위 사용
+            1) width, height 속성
+             - block, inline-block 태그의 가로, 세로 크기를 지정
+             - px, % 단위 사용
 
-            2)margin, padding 속성
-            -margin: 태그 바깥 여백을 지정
-            -padding: 태그 안쪽 여백을 지정
-            -margin, padding: 10px 20px 30px 40px(순서대로 12시, 3시, 6시, 9시)
-            -margin, padding: 10px 20px 30px (순서대로 12시, (3시, 9시), 6시)
-            -margin, padding: 10px 20px (순서대로 (12시, 6시),(9시, 3시))
-            -margin, padding: 10px (순서대로 12시, 3시, 6시, 9시 여백 10px)
-            -margin, padding: 0 auto; block 태그 가운데 정렬
+            2) margin, padding 속성
+             - margin  : 태그 바깥 여백을 지정
+             - padding : 태그 안쪽 여백을 지정
+             - margin, padding : 10px 20px 30px 40px (순서대로 12시, 3시, 6시, 9시)
+             - margin, padding : 10px 20px 30px (순서대로 12시, (3시 9시), 6시)
+             - margin, padding : 10px 20px (순서대로 (12시 6시), (9시 3시))
+             - margin, padding : 10px (12시, 3시, 6시, 9시 여백 10px)
+             - margin: 0 auto; block 태그 가운데 정렬
 
-            3)border 속성
-            -태그의 테두리를 지정하는 속성
-            -border-width, border-style, border-color 순서로 지정
-            -border: 1px solid black; 한번에 지정
+            3) border 속성
+             - 태그의 테두리를 지정하는 속성
+             - border-width, border-style, border-color 순서로 지정
+             - border: 1px solid black; 한번에 지정
 
-            4)box-sizing 속성
-            -고정된 width, height 크기에서 padding, border를 적용
-         */
+            4) box-sizing 속성
+             - 고정된 width, height 크기에서 padding, border를 적용             
+        */
 
-            div{
-                display: inline-block;
-                width: 100px;
-                height: 100px;
-                background: orange;
-            }
+        div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: orange;
+        }
 
-            body > section:nth-of-type(1) > div:first-child{
-                width:  50px;
-                height: 50px;
-            }
+        section:nth-of-type(1) > div:first-child {
+            width: 50px;
+            height: 50px;
+        }
 
-            body > section:nth-of-type(1) > div:first-child(2){
-                width: 10%;
-                height: 10%; /* height는 % 크기를 적용 할 수 없다. */
-            }
+        section:nth-of-type(1) > div:nth-child(2) {
+            width: 10%;
+            height: 10%; /* height는 % 크기를 적용 할 수 없다. */
+        }
 
-            body > section:nth-of-type(2) > div:nth-child(1){
-                margin: 10px;
-                padding: 10px;
-            }
-            body > section:nth-of-type(2) > div:nth-child(2){
-                margin: 10px 20px;
-                padding: 10px 20px;
+        section:nth-of-type(2) > div:nth-child(1) {
+            margin: 10px;
+            padding: 10px;
+        }
+        section:nth-of-type(2) > div:nth-child(2) {
+            margin: 10px 20px;
+            padding: 10px 20px;
+        }
+        section:nth-of-type(2) > div:nth-child(3) {
+            margin: 10px 20px 30px;
+            padding: 10px 20px 30px;
+        }
+        section:nth-of-type(2) > div:nth-child(4) {
+            margin: 10px 20px 30px 40px;
+            padding: 10px 20px 30px 40px;
+        }
+        section:nth-of-type(2) > div:nth-child(5) {
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+        }
+        section:nth-of-type(2) > div:nth-child(6) {
+            display: block;
 
-            }
-            body > section:nth-of-type(2) > div:nth-child(3){
-                margin: 10px 20px 30px;
-                padding: 10px 20px 30px;
-            }
-            body > section:nth-of-type(2) > div:nth-child(4){
-                margin: 10px 20px 30px 40px;
-                padding: 10px 20px 30px 40px;
-            }
-            body > section:nth-of-type(2) > div:nth-child(5){
-                margin-top: 10px;
-                margin-right: 20px;
-                margin-bottom: 30px;
-                margin-left: 40px;
-                padding-top: 10px;
-                padding-right: 20px;
-                padding-bottom: 30px;
-                padding-left: 40px;
-            }
-            body > section:nth-of-type(2) > div:nth-child(6){
-                display: block;
-                margin: 10px auto;
-            }
+            /* 영역 가운데 정렬 */
+            margin: 0 auto;
+        }
 
-            section:nth-of-type(3) > div:nth-child(1){
-                border-width: 1px;
-                border-style: solid;
-                border-color: #000;
-                }
-            section:nth-of-type(3) > div:nth-child(2){
-                border: 1px solid #000;
-            }
-                
-            section:nth-of-type(3) > div:nth-child(3){
-                border: 2px dotted #f00;
-            }
-            
-            
-            section:last-of-type > div:nth-child(1){
-                padding: 10px;
-                box-sizing: border-box;
-            }
-            section:last-of-type > div:nth-child(2){
-                padding: 10px;
-                border: solid black;
-                box-sizing: border-box;
-            }
-            section:last-of-type > div:nth-child(3){
-                padding: 10px;
-                border: 2px solid black
-                box-sizing: border-box;
-            
-            }
+        section:nth-of-type(3) > div:nth-child(1) {
+            border-width: 1px;
+            border-style: solid;
+            border-color: #000;
+        }
+        section:nth-of-type(3) > div:nth-child(2) {
+            border: 1px solid #000;
+        }
+        section:nth-of-type(3) > div:nth-child(3) {
+            border: 2px dotted #f00; 
+        }
+
+        section:last-of-type > div:nth-child(1) {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        section:last-of-type > div:nth-child(2) {            
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        section:last-of-type > div:nth-child(3) {
+            padding: 10px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
 
 
 
@@ -115,15 +111,15 @@
 </head>
 <body>
     <h3>2.CSS 박스속성(크기, 여백, 테두리)</h3>
-    
+
     <h4>width, height 속성</h4>
     <section>
         <div>box1</div>
         <div>box2</div>
         <div>box3</div>
     </section>
-
-    <h4>margin, padding 속성</h4>
+    
+    <h4>margin, paddinig 속성</h4>
     <section>
         <div>box1</div>
         <div>box2</div>
@@ -132,7 +128,7 @@
         <div>box5</div>
         <div>box6</div>
     </section>
-
+    
     <h4>border 속성</h4>
     <section>
         <div>box1</div>
@@ -140,13 +136,12 @@
         <div>box3</div>
     </section>
 
-    <h4>box-size 속성</h4>
+    <h4>box-sizing 속성</h4>
     <section>
         <div>box1</div>
         <div>box2</div>
         <div>box3</div>
-    </section>
-
-
+    </section>   
+    
 </body>
 </html>
