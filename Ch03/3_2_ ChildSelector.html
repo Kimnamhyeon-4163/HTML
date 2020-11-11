@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식선택자</title>
+</head>
+<body>
+    <h3>2.CSS 자식선택자</h3>
+    <style>
+        /* child selector*/
+
+       body > h3{
+           color:orange;
+       } 
+       section > h3{
+            color: #0000ff;
+        }
+
+        section > .s1 > em {
+            color: gray;
+        }
+
+        .s2 > em{
+            color: green;
+        }
+
+        /* decendents selector*/
+
+        section  strong{
+            color: #000;
+
+        }
+
+    </style>
+    <section>
+        <h3>애국가</h3>
+        <p class="s1">
+            동해물과 백두산이 마르고 닳도록<br/>
+            하느님이 보우하사 우리나라 만세<br/>
+
+            <em>
+                무궁화 삼천리 화려강사<br/>
+                <strong>대한사람</strong>대한으로 길이보전하세.   
+            </em>
+        </p>
+        
+        <p class="s2">
+            남산위에 저 소나무 철갑을 두른듯<br/>
+            하느님이 보우하사 우리나라 만세<br/>
+
+            <em>
+                무궁화 삼천리 화려강사<br/>
+                <strong>대한사람</strong>대한으로 길이보전하세.   
+            </em>
+        </p>
+        
+
+
+    </section>
+    
+</body>
+</html>

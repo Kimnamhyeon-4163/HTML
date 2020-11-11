@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 구조자선택자</title>
+    <style>
+
+
+       body >ul:nth-child(2)>li:nth-child(1){
+           color: blue;
+       } 
+
+       ul:nth-of-type(1) > li:nth-child(2){
+           color: green;
+       }
+
+       ul:nth-of-type(1) > li:last-child{
+           color: orange;
+       }
+
+       ul:nth-child(3) > li:first-child{
+           color: green
+       }
+
+       ul:nth-of-type(2) > li:nth-child(2){
+           color: red;
+       }
+
+       ul:nth-of-type(2) > li:last-child{
+           color:blue
+       }
+
+    </style>
+</head>
+<body>
+    <h3>3. 구조선택자</h3>
+
+    <ul>
+        <li>서울</li>
+        <li>대전</li>
+        <li>대구</li>
+        <li>부산</li>
+        <li>광주</li>
+    </ul>
+
+    <ul>    
+        <li>한국</li>
+        <li>미국</li>
+        <li>독일</li>
+        <li>일본</li>
+        <li>중국</li>
+    </ul>
+
+</body>
+</html>
