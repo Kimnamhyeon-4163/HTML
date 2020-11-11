@@ -1,44 +1,45 @@
-
-   
 /* 초기화 */
-*{
+* {
     margin: 0;
     padding: 0;
     font: normal 12px '돋움';
 }
 
-ul,ol{list-style: none;}
-a{text-decoration: none; color: #111;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #111;}
 
-#wrapper{}
+#wrapper {}
 
-/* 회원 로그인 */
+/* 회원 - 로그인 */
 #user {}
-#user.login{
+#user.login {
     width: 360px;
     height: auto;
     margin: 100px auto;
 }
-#user.login>form{
+
+#user.login > form {
     position: relative;
     padding: 20px 20px 20px 50px;
     border: 1px solid #cfded8;
     border-bottom: 0;
 }
-#user.login>form>table{}
-#user.login>form>table img{
+
+#user.login > form > table {}
+#user.login > form > table img {
     width: 20px;
 }
-#user.login>form>table input{
+#user.login > form > table input {
     width: 162px;
     height: 22px;
     margin: 0 0 5px 0;
-    border:  1px solid #e4eaec;
+    border: 1px solid #e4eaec;
     background: #f7f7f7;
     color: #111;
     outline: none;
 }
-#user.login>form>.btnLogin{
+
+#user.login > form > .btnLogin {
     position: absolute;
     right: 52px;
     top: 22px;
@@ -50,67 +51,70 @@ a{text-decoration: none; color: #111;}
     color: #111;
     outline: none;
 }
-#uesr.login>.info{
+
+#user.login > .info {
     padding: 20px;
     border: 1px solid #cfded8;
     background: #f5f6fa;
     overflow: hidden;
 }
-#user.login>.info>p{
+
+#user.login > .info > p {
     padding: 10px 0;
 }
-#uesr.login>.info>a{
+
+#user.login > .info > a {
     float: right;
 }
 
 
-/* 회원 약관 */
+/* 회원 - 약관 */
 #user.terms {
-                width: 600px;
-                height: auto;
-                margin: 60px auto;
-            }
-            #user.terms > table {
-                width: 100%;
-                border-top: 2px solid #111;
+    width: 600px;
+    height: auto;
+    margin: 60px auto;
+}
+#user.terms > table {
+    width: 100%;
+    border-top: 2px solid #111;            
+}
 
-            }
-            #user.terms > table > caption {
-                text-align: left;
-                font-weight: bold;
-                padding: 10px 0;
-            }
-            #user.terms > table tr {}
-            #user.terms > table tr > td {
-                padding: 60px 10px;
-                border: 1px solid #e9e9e9;
-            }
-            #user.terms > table textarea {
-                width: 100%;
-                height: 200px;
-                resize: none;
-                border:  1px solid #e4eaec;
-                background:  #f7f7f7;
-                color: #111;
-                padding:  2px;
-                outline:  none;
-            }
-            #user.terms > table p {
-                float: right;
-            }
-            #user.terms > table p > input {}
-            
-            #user.terms > div {
-                padding:  20px 0;
-                text-align: right;
-            }
-            #user.terms > div > a {
-                padding: 8px;
-                border:1px solid #bebebe;
-                color: #111;
+#user.terms > table > caption {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 0;
+}
+#user.terms > table tr {}        
+#user.terms > table tr > td {
+    padding: 6px 10px;
+    border: 1px solid #e9e9e9;
+}
 
-            }
-            #user.terms > div > a:nth-child(1) {background: #fdfdfd;}
-            #user.terms > div > a:nth-child(2) {background: #e9e9e9;}
+#user.terms > table textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border: 1px solid #e4eaec;
+    background: #f7f7f7;
+    color: #111;
+    padding: 2px;
+    outline: none;
+}
+#user.terms > table p {
+    float: right;
+}
+#user.terms > table p > input {}
 
-/* 회원 회원가입 */
+#user.terms > div {
+    padding: 20px 0;
+    text-align: right;
+}
+#user.terms > div > a {
+    padding: 8px;
+    border: 1px solid #bebebe;
+    color: #111;
+}
+#user.terms > div > a:nth-child(1) {background: #fdfdfd;}
+#user.terms > div > a:nth-child(2) {background: #e9e9e9;}
+
+/* 회원 - 회원가입 */
